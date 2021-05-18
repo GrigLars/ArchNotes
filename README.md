@@ -62,21 +62,21 @@ Format the partitions.  In this case, ext4. Format swap and turn it on.  Then mo
 
     pacstrap /mnt base linux make grub gcc perl dhclient vim xorg plasma plasma-wayland-session kde-applications linux-headers sudo terminator
 This installs what we need for a working Arch Linux system with KDE on the next boot.  
-**base**: base linux programs and files
-**linux**: the linux kernel (not needed for containers like docker, LXC, etc)
-**make**: stuff to interpret makefiles, needed for VirtualBox guest additions
-**grub**: needed to boot the system
-**gcc**: the C compiler, needed for VirtualBox guest additions
-**perl**: perl interpreter, needed for VirtualBox guest additions
-**dhclient**: get your IP by dhcp
-**vim**: my favorite text editor (others are nano, emacs, or joe)
-**xorg**: the Xorg display server
-**plasma**: KDE's rendering engine
-**plasma-wayland-session**: KDE's wayland (compositor protocol) session
-**kde-applications**: this is the KDE meta-package, it's like "kde-full" on other systems
-**linux-headers**: the kernel headers and configs, needed for VirtualBox guest additions
-**sudo**: the "super user do" package for running root commands
-**terminator**: my favorite terminal program like konsole or xterm
+**base**: base linux programs and files, 
+**linux**: the linux kernel (not needed for containers like docker, LXC, etc), 
+**make**: stuff to interpret makefiles, needed for VirtualBox guest additions, 
+**grub**: needed to boot the system, 
+**gcc**: the C compiler, needed for VirtualBox guest additions, 
+**perl**: perl interpreter, needed for VirtualBox guest additions, 
+**dhclient**: get your IP by dhcp, 
+**vim**: my favorite text editor (others are nano, emacs, or joe), 
+**xorg**: the Xorg display server, 
+**plasma**: KDE's rendering engine, 
+**plasma-wayland-session**: KDE's wayland (compositor protocol) session, 
+**kde-applications**: this is the KDE meta-package, it's like "kde-full" on other systems, 
+**linux-headers**: the kernel headers and configs, needed for VirtualBox guest additions, 
+**sudo**: the "super user do" package for running root commands, 
+**terminator**: my favorite terminal program like konsole or xterm.
 
     genfstab -U /mnt >> /mnt/etc/fstab
 Generates the file system table (what mounts where)
