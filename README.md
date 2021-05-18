@@ -118,7 +118,7 @@ This enabled two services: Simple Desktop Display Manager (the login window) and
 Add a user with admin capabilities.  Since we don't set the root password in this document, this is an essential step.
 
 ### Links:
-https://wiki.archlinux.org/title/Installation_guide
-https://itsfoss.com/install-kde-arch-linux/
-https://wiki.archlinux.org/title/GRUB
-https://wiki.archlinux.org/title/Network_configuration
+- https://wiki.archlinux.org/title/Installation_guide
+- https://itsfoss.com/install-kde-arch-linux/
+- https://wiki.archlinux.org/title/GRUB
+- https://wiki.archlinux.org/title/Network_configuration
