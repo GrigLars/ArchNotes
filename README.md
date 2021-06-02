@@ -117,6 +117,16 @@ This enabled two services: Simple Desktop Display Manager (the login window) and
     passwd joeuser
 Add a user with admin capabilities.  Since we don't set the root password in this document, this is an essential step.
 
+Reboot.  
+
+    sudo -i
+    mount /dev/cdrom /mnt
+    sh /mnt/VboxLinuxAdditions.run
+
+Then log in as joeuser, mount the guest additions in Virtualbox, and run VBoxLinuxAdditions.run as sudo.  
+
+You'll have to reboot again, but you should be good to go.
+
 ### Links:
 - https://wiki.archlinux.org/title/Installation_guide
 - https://itsfoss.com/install-kde-arch-linux/
