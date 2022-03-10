@@ -4,7 +4,7 @@ I made this file and some notes that should help somebody in the future.  The Ar
 Note: Arch documentation is thurough and amazing.  Kudos to the people who spend their time doing this. 
 
 ## The Quick Generic Way
-These are kind of specific to my preferences and environment, so watch out for the cutting and pasting, okay?
+These are kind of specific to my preferences and environment, so watch out for the cutting and pasting, okay? Note, if you have cfdisk listing this as "gpt" then i386-pc won't work for the grub-install --target later on, so I always format it as DOS and MBR.
 
     timedatectl set-ntp true
     cfdisk /dev/sda
